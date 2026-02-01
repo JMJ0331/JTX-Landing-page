@@ -40,10 +40,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 180px;
-    height: fit-content;
-    padding: var(--relleno-32) var(--relleno-32);
+    max-width: auto;
+    height: auto;
+    padding: var(--relleno-32);
     box-shadow: var(--sombra-300);
+    border-radius: var(--bordeR-8);
 }
 
 /* Tablets */
