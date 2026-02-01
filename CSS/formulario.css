@@ -67,7 +67,9 @@
 }
 
 @media (max-width: 1024px){
-    /* La configuracion actual de pc funciona bien para tablets por igual */
+    .formulario{
+        margin: var(--margen-32);
+    }
 }
 
 @media (max-width: 768px) {
@@ -75,6 +77,7 @@
     .formulario{
         margin: var(--margen-16);
     }
+
     .horizontal {
         flex-flow: column wrap;
         align-items: flex-start;
