@@ -66,15 +66,22 @@
     padding: var(--relleno-16);
 }
 
-@media (max-width: 1024px){
-    .formulario-contenedor{
+@media (max-width: 1024px) {
+    .formulario-contenedor {
         padding: var(--relleno-32);
+    }
+
+    .formulario {
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    .formulario {
+        width: 100%;
+    }
 
-    .formulario-contenedor{
+    .formulario-contenedor {
         padding: var(--relleno-16);
     }
 
@@ -88,7 +95,7 @@
         width: 100%;
     }
 
-    .formulario-pie{
+    .formulario-pie {
         display: flex;
         justify-content: center;
     }
