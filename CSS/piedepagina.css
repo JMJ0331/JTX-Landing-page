@@ -1,0 +1,116 @@
+@import url(variables.css);
+
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.pie-encabezado {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--borde-2) solid var(--negro-50);
+    padding: var(--relleno-16) var(--relleno-32);
+}
+
+.pie-logo img {
+    width: 140px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--espaciado-8);
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.pie-contenido {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: var(--relleno-16) var(--relleno-32);
+    gap: var(--relleno-16);
+}
+
+.balas-azules {
+    color: var(--azul-500);
+}
+
+.nosotros,
+.servicios,
+.proyectos {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--espaciado-8);
+}
+
+.nosotros a,
+.servicios a,
+.proyectos a{
+    color: var(--negro-400);
+}
+
+.nosotros a:hover,
+.servicios a:hover,
+.proyectos a:hover{
+    color: var(--negro-100);
+}
+
+.redes-sociales-enlances {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contactenos {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--espaciado-8);
+}
+
+.contactenos a{
+    text-decoration: none;
+}
+
+.pie {
+    display: flex;
+    justify-content: center;
+    padding: var(--relleno-16) var(--relleno-32);
+    border-top: var(--borde-2) solid var(--negro-50);
+}
+
+@media (max-width: 1024px) {
+    .pie-logo img {
+        width: 100px;
+    }
+
+    .pie-encabezado,
+    .pie-contenido,
+    .pie {
+        padding: var(--relleno-16) var(--relleno-16);
+    }
+}
+
+@media (max-width: 768px) {
+    .pie-logo img {
+        width: 100px;
+    }
+
+    .pie-contenido {
+        flex-flow: column-reverse wrap;
+    }
+
+    .contactenos, .proyectos, .nosotros, .servicios{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}

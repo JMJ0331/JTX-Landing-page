@@ -1,0 +1,133 @@
+@import url(variables.css);
+
+/* Encabezado */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--relleno-16) var(--relleno-32);
+    box-shadow: var(--sombra-100);
+}
+
+.menu-hamburguesa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--relleno-2);
+}
+
+.menu-hamburguesa a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-hamburguesa img {
+    width: 140px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header a, li, ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--espaciado-176);
+}
+
+.navbar a {
+    color: var(--primario-500);
+}
+
+.navbar a:hover{
+    color: var(--primario-100);
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: var(--relleno-16);
+    }
+
+    .menu-hamburguesa {
+        gap: var(--espaciado-2);
+    }
+
+    .menu-hamburguesa img {
+        width: 100px;
+    }
+
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after {
+        background-color: var(--primario-500);
+        width: 32px;
+        height: 4px;
+        position: absolute;
+        transition: all 0.3s ease;
+        content: "";
+    }
+
+    .menu-icon {
+        position: relative;
+        width: 32px;
+        height: 4px;
+    }
+
+    .menu-icon::before {
+        transform: translate(-16px, -10px);
+    }
+
+    .menu-icon::after {
+        transform: translate(-16px, 10px);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        background: var(--blanco-50);
+        box-shadow: var(--sombra-100);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: var(--espaciado-8);
+        padding: var(--relleno-8);
+    }
+
+    .header.is-open .menu-icon {
+        background-color: transparent;
+    }
+
+    .header.is-open .menu-icon::before {
+        transform: translateX(-20px) rotate(45deg);
+    }
+
+    .header.is-open .menu-icon::after {
+        transform: translateX(-20px) rotate(-45deg);
+    }
+
+    .header.is-open .navbar {
+        display: block;
+    }
+}

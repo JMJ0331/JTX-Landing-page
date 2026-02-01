@@ -1,0 +1,75 @@
+@import url(variables.css);
+
+/* Tarjeta vertical */
+.tarjeta-v {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-16);
+    background-color: var(--blanco-50);
+    box-shadow: var(--sombra-200);
+    padding: var(--relleno-16);
+    border-radius: var(--bordeR-8);
+    width: 100%;
+    max-width: 286px;
+    height: auto;
+}
+
+/* Tarjeta horizontal */
+.tarjeta-h {
+    display: flex;
+    flex-direction: row;
+    gap: var(--espaciado-16);
+    background-color: var(--blanco-50);
+    box-shadow: var(--sombra-300);
+    padding: var(--relleno-16);
+    border-radius: var(--bordeR-8);
+    width: 100%;
+    max-width: 576px;
+    height: auto;
+}
+
+.tarjeta-h-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--espaciado-8);
+}
+
+/* Tarjeta pequeña*/
+.tarjeta-p{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 180px;
+    height: fit-content;
+    padding: var(--relleno-32) var(--relleno-32);
+    box-shadow: var(--sombra-300);
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .tarjeta-v {
+        gap: var(--espaciado-8);
+    }
+
+    .tarjeta-h {
+        gap: var(--espaciado-8);
+        max-width: fit-content;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .tarjeta-v {
+        max-width: 100%;
+        gap: var(--espaciado-8);
+        padding: var(--relleno-8);
+        border-radius: var(--bordeR-6);
+    }
+
+    .tarjeta-h {
+        gap: var(--espaciado-8);
+        flex-wrap: wrap;
+        max-width: fit-content;
+    }
+}

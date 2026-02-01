@@ -1,0 +1,92 @@
+@import url(variables.css);
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--sombra-200);
+    border-radius: var(--bordeR-16);
+}
+
+.horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    gap: var(--espaciado-4);
+}
+
+.horizontal input,
+.horizontal select {
+    flex: 1;
+    padding: var(--relleno-4);
+    border-radius: var(--bordeR-4);
+    border: var(--borde-2) solid var(--primario-300);
+}
+
+.horizontal input:focus,
+.horizontal input:focus-visible,
+.horizontal select:focus,
+.horizontal:focus-visible {
+    outline: var(--borde-2) solid var(--primario-300);
+}
+
+.formulario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primario-500);
+    padding: var(--relleno-16);
+    border-radius: var(--bordeR-16) var(--bordeR-16) var(--bordeR-0) var(--bordeR-0);
+}
+
+.formulario-header h6 {
+    color: var(--blanco-50);
+}
+
+.formulario-header p {
+    color: var(--primario-100);
+}
+
+.formulario-cuerpo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-16);
+    padding: var(--relleno-16);
+}
+
+.formulario-pie {
+    padding: var(--relleno-16);
+}
+
+@media (max-width: 1024px){
+    /* La configuracion actual de pc funciona bien para tablets por igual */
+}
+
+@media (max-width: 768px) {
+
+    .formulario{
+        margin: var(--margen-16);
+    }
+    .horizontal {
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    .horizontal input,
+    .horizontal select {
+        width: 100%;
+    }
+
+    .formulario-pie{
+        display: flex;
+        justify-content: center;
+    }
+}

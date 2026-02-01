@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Tipografía */
+  --font-family: 'Montserrat', sans-serif;
+
+  /* Encabezados */
+  --h1-font-size: 60px;
+  --h1-line-height: 70px;
+  --h1-font-weight: 600;
+
+  --h2-font-size: 50px;
+  --h2-line-height: 60px;
+  --h2-font-weight: 600;
+
+  --h3-font-size: 42px;
+  --h3-line-height: 52px;
+  --h3-font-weight: 600;
+
+  --h4-font-size: 36px;
+  --h4-line-height: 46px;
+  --h4-font-weight: 600;
+
+  --h5-font-size: 30px;
+  --h5-line-height: 40px;
+  --h5-font-weight: 600;
+
+  --h6-font-size: 24px;
+  --h6-line-height: 34px;
+  --h6-font-weight: 600;
+
+  /* Subtítulos */
+  --s1-font-size: 20px;
+  --s1-line-height: 28px;
+  --s1-font-weight: 600;
+
+  --s2-font-size: 18px;
+  --s2-line-height: 26px;
+  --s2-font-weight: 600;
+
+  /* Cuerpo */
+  --b1-font-size: 16px;
+  --b1-line-height: 24px;
+  --b1-font-weight: 400;
+
+  --b2-font-size: 16px;
+  --b2-line-height: 24px;
+  --b2-font-weight: 500;
+
+  --b3-font-size: 14px;
+  --b3-line-height: 22px;
+  --b3-font-weight: 400;
+
+  --b4-font-size: 14px;
+  --b4-line-height: 22px;
+  --b4-font-weight: 500;
+
+  /* Párrafo */
+  --p-font-size: 12px;
+  --p-line-height: 12px;
+  --p-font-weight: 400;
+
+  /* Texto en botones */
+  --btn-Gigante-txt-size: 26px;
+  --btn-Gigante-txt-line-height: 32px;
+  --btn-Gigante-txt-font-weight: 500;
+
+  --btn-Grande-txt-size: 24px;
+  --btn-Grande-txt-line-height: 30px;
+  --btn-Grande-txt-font-weight: 500;
+
+  --btn-Medio-txt-size: 22px;
+  --btn-Medio-txt-line-height: 28px;
+  --btn-Medio-txt-font-weight: 500;
+
+  --btn-Pequenio-txt-size: 20px;
+  --btn-Pequenio-txt-line-height: 26px;
+  --btn-Pequenio-txt-font-weight: 500;
+
+  --btn-Muy_Pequenio-txt-size: 18px;
+  --btn-Muy_Pequenio-txt-line-height: 24px;
+  --btn-Muy_Pequenio-txt-font-weight: 500;
+
+  --btn-Extra_Pequenio-txt-size: 16px;
+  --btn-Extra_Pequenio-txt-line-height: 22px;
+  --btn-Extra_Pequenio-txt-font-weight: 500;
+
+  /* Negros */
+  --negro-50: #E8E8E8;
+  --negro-100: #B6B6B6;
+  --negro-200: #939393;
+  --negro-300: #626262;
+  --negro-400: #434343;
+  --negro-500: #141414;
+  --negro-600: #121212;
+  --negro-700: #0E0E0E;
+  --negro-800: #0B0B0B;
+  --negro-900: #080808;
+
+  /* Blancos */
+  --blanco-50: #FFFFFF;
+  --blanco-100: #FFFFFF;
+  --blanco-200: #FFFFFF;
+  --blanco-300: #FFFFFF;
+  --blanco-400: #FFFFFF;
+  --blanco-500: #FFFFFF;
+  --blanco-600: #E8E8E8;
+  --blanco-700: #B5B5B5;
+  --blanco-800: #8C8C8C;
+  --blanco-900: #6B6B6B;
+
+  /* Primarios */
+  --primario-50: #E8EAEC;
+  --primario-100: #B8BDC5;
+  --primario-200: #959DA9;
+  --primario-300: #657082;
+  --primario-400: #475469;
+  --primario-500: #192944;
+  --primario-600: #17253E;
+  --primario-700: #121D30;
+  --primario-800: #0E1725;
+  --primario-900: #0B111D;
+
+  /* Secundarios */
+  --secundario-50: #FCFBEE;
+  --secundario-100: #F5F2CB;
+  --secundario-200: #F0ECB2;
+  --secundario-300: #E9E38F;
+  --secundario-400: #E5DD79;
+  --secundario-500: #DED558;
+  --secundario-600: #CAC250;
+  --secundario-700: #9E973E;
+  --secundario-800: #7A7530;
+  --secundario-900: #5D5925;
+
+  /* Terciarios */
+  --terciario-50: #E6EDF8;
+  --terciario-100: #B0C7EA;
+  --terciario-200: #8AACDF;
+  --terciario-300: #5486D1;
+  --terciario-400: #336EC8;
+  --terciario-500: #004ABA;
+  --terciario-600: #0043A9;
+  --terciario-700: #003584;
+  --terciario-800: #002966;
+  --terciario-900: #001F4E;
+
+  /* Verdes */
+  --verde-50: #E6FAE8;
+  --verde-100: #B0EFB7;
+  --verde-200: #8AE895;
+  --verde-300: #54DD64;
+  --verde-400: #33D646;
+  --verde-500: #00CC18;
+  --verde-600: #00BA16;
+  --verde-700: #009111;
+  --verde-800: #00700D;
+  --verde-900: #00560A;
+
+  /* Azules */
+  --azul-50: #E6F4FF;
+  --azul-100: #B0DEFF;
+  --azul-200: #8ACEFF;
+  --azul-300: #54B8FF;
+  --azul-400: #33AAFF;
+  --azul-500: #0095FF;
+  --azul-600: #0088E8;
+  --azul-700: #006AB5;
+  --azul-800: #00528C;
+  --azul-900: #003F6B;
+
+  /* Amarillos */
+  --amarillo-100: #FFF7E6;
+  --amarillo-50: #FFE5B0;
+  --amarillo-200: #FFD88A;
+  --amarillo-300: #FFC654;
+  --amarillo-400: #FFBB33;
+  --amarillo-500: #FFAA00;
+  --amarillo-600: #E89B00;
+  --amarillo-700: #B57900;
+  --amarillo-800: #8C5E00;
+  --amarillo-900: #6B4700;
+
+  /* Rojos */
+  --rojo-100: #FEE6E6;
+  --rojo-50: #FAB0B0;
+  --rojo-200: #F88A8A;
+  --rojo-300: #F55454;
+  --rojo-400: #F33333;
+  --rojo-500: #F00000;
+  --rojo-600: #DA0000;
+  --rojo-700: #AA0000;
+  --rojo-800: #840000;
+  --rojo-900: #650000;
+
+  /* Espaciados */
+  --espaciado-0: 0px;
+  --espaciado-2: 2px;
+  --espaciado-4: 4px;
+  --espaciado-8: 8px;
+  --espaciado-16: 16px;
+  --espaciado-24: 24px;
+  --espaciado-32: 32px;
+  --espaciado-40: 40px;
+  --espaciado-48: 48px;
+  --espaciado-56: 56px;
+  --espaciado-64: 64px;
+  --espaciado-72: 72px;
+  --espaciado-80: 80px;
+  --espaciado-88: 88px;
+  --espaciado-96: 96px;
+  --espaciado-104: 104px;
+  --espaciado-108: 108px;
+  --espaciado-112: 112px;
+  --espaciado-120: 120px;
+  --espaciado-128: 128px;
+  --espaciado-136: 136px;
+  --espaciado-144: 144px;
+  --espaciado-152: 152px;
+  --espaciado-160: 160px;
+  --espaciado-168: 168px;
+  --espaciado-176: 176px;
+  --espaciado-184: 184px;
+  --espaciado-192: 192px;
+
+  /* Rellenos */
+  --relleno-0: 0px;
+  --relleno-2: 2px;
+  --relleno-4: 4px;
+  --relleno-8: 8px;
+  --relleno-16: 16px;
+  --relleno-24: 24px;
+  --relleno-32: 32px;
+  --relleno-40: 40px;
+  --relleno-48: 48px;
+  --relleno-56: 56px;
+  --relleno-64: 64px;
+  --relleno-72: 72px;
+  --relleno-80: 80px;
+  --relleno-88: 88px;
+  --relleno-96: 96px;
+  --relleno-104: 104px;
+  --relleno-108: 108px;
+  --relleno-112: 112px;
+  --relleno-120: 120px;
+  --relleno-128: 128px;
+  --relleno-136: 136px;
+  --relleno-144: 144px;
+  --relleno-152: 152px;
+  --relleno-160: 160px;
+  --relleno-168: 168px;
+  --relleno-176: 176px;
+  --relleno-184: 184px;
+  --relleno-192: 192px;
+
+  /* Margenes */
+  --margen-0: 0px;
+  --margen-2: 2px;
+  --margen-4: 4px;
+  --margen-8: 8px;
+  --margen-16: 16px;
+  --margen-24: 24px;
+  --margen-32: 32px;
+  --margen-40: 40px;
+  --margen-48: 48px;
+  --margen-56: 56px;
+  --margen-64: 64px;
+  --margen-72: 72px;
+  --margen-80: 80px;
+  --margen-88: 88px;
+  --margen-96: 96px;
+  --margen-104: 104px;
+  --margen-108: 108px;
+  --margen-112: 112px;
+  --margen-120: 120px;
+  --margen-128: 128px;
+  --margen-136: 136px;
+  --margen-144: 144px;
+  --margen-152: 152px;
+  --margen-160: 160px;
+  --margen-168: 168px;
+  --margen-176: 176px;
+  --margen-184: 184px;
+  --margen-192: 192px;
+
+  /* Radio del borde */
+  --bordeR-0: 0px;
+  --bordeR-2: 2px;
+  --bordeR-4: 4px;
+  --bordeR-8: 8px;
+  --bordeR-16: 16px;
+  --bordeR-24: 24px;
+  --bordeR-32: 32px;
+  --bordeR-40: 40px;
+  --bordeR-48: 48px;
+  --bordeR-56: 56px;
+  --bordeR-64: 64px;
+  --bordeR-72: 72px;
+  --bordeR-80: 80px;
+  --bordeR-88: 88px;
+  --borderR-96: 96px;
+  --borderR-104: 104px;
+  --borderR-108: 108px;
+  --borderR-112: 112px;
+  --borderR-120: 120px;
+  --borderR-128: 128px;
+  --borderR-136: 136px;
+  --borderR-144: 144px;
+  --borderR-152: 152px;
+  --borderR-160: 160px;
+  --borderR-168: 168px;
+  --borderR-176: 176px;
+  --borderR-184: 184px;
+  --borderR-192: 192px;
+
+  /* Borde */
+  --borde-0: 0px;
+  --borde-2: 2px;
+  --borde-4: 4px;
+  --borde-8: 8px;
+  --borde-16: 16px;
+  --borde-24: 24px;
+  --borde-32: 32px;
+  --borde-40: 40px;
+  --borde-48: 48px;
+  --borde-56: 56px;
+  --borde-64: 64px;
+  --borde-72: 72px;
+  --borde-80: 80px;
+  --borde-88: 88px;
+  --borde-96: 96px;
+  --borde-104: 104px;
+  --borde-108: 108px;
+  --borde-112: 112px;
+  --borde-120: 120px;
+  --borde-128: 128px;
+  --borde-136: 136px;
+  --borde-144: 144px;
+  --borde-152: 152px;
+  --borde-160: 160px;
+  --borde-168: 168px;
+  --borde-176: 176px;
+  --borde-184: 184px;
+  --borde-192: 192px;
+
+  /* Sombras */
+  --sombra-100: 0 5px 10px -1px rgba(174, 174, 174, 0.10);
+  --sombra-200: 0 5px 20px -2px rgba(174, 174, 174, 0.20);
+  --sombra-300: 0 5px 30px -3px rgba(174, 174, 174, 0.30);
+  --sombra-400: 0 5px 40px -4px rgba(174, 174, 174, 0.40);
+  --sombra-500: 0 5px 50px -5px rgba(174, 174, 174, 0.50);
+  --sombra-600: 0 5px 60px -6px rgba(174, 174, 174, 0.60);
+  --sombra-700: 0 5px 70px -7px rgba(174, 174, 174, 0.70);
+  --sombra-800: 0 5px 80px -8px rgba(174, 174, 174, 0.80);
+  --sombra-900: 0 5px 90px -9px rgba(174, 174, 174, 0.90);
+
+  /* Botones relleno */
+  --btn-Gigante-ID: 24px;
+  --btn-Gigante-AA: 16px;
+
+  --btn-Grande-ID: 20px;
+  --btn-Grande-AA: 14px;
+
+  --btn-Medio-ID: 16px;
+  --btn-Medio-AA: 12px;
+
+  --btn-Pequenio-ID: 12px;
+  --btn-Pequenio-AA: 10px;
+
+  --btn-Muy_Pequenio-ID: 10px;
+  --btn-Muy_Pequenio-AA: 8px;
+
+  --btn-Extra_Pequenio-ID: 8px;
+  --btn-Extra_Pequenio-AA: 6px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  :root {
+    --h1-font-size: 42px;
+    --h1-line-height: 52px;
+
+    --h2-font-size: 36px;
+    --h2-line-height: 46px;
+
+    --h3-font-size: 30px;
+    --h3-line-height: 40px;
+
+    --h4-font-size: 24px;
+    --h4-line-height: 34px;
+
+    --h5-font-size: 18px;
+    --h5-line-height: 28px;
+
+    --h6-font-size: 16px;
+    --h6-line-height: 26px;
+
+    --s1-font-size: 18px;
+    --s1-line-height: 28px;
+
+    --s2-font-size: 16px;
+    --s2-line-height: 24px;
+
+    --b1-font-size: 16px;
+    --b1-line-height: 24px;
+
+    --b2-font-size: 16px;
+    --b2-line-height: 24px;
+
+    --b3-font-size: 14px;
+    --b3-line-height: 22px;
+
+    --b4-font-size: 14px;
+    --b4-line-height: 22px;
+
+    --p-font-size: 14px;
+    --p-line-height: 14px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  :root {
+    --h1-font-size: 24px;
+    --h1-line-height: 34px;
+
+    --h2-font-size: 20px;
+    --h2-line-height: 28px;
+
+    --h3-font-size: 18px;
+    --h3-line-height: 26px;
+
+    --h4-font-size: 16px;
+    --h4-line-height: 24px;
+
+    --h5-font-size: 14px;
+    --h5-line-height: 22px;
+
+    --h6-font-size: 12px;
+    --h6-line-height: 22px;
+
+    --s1-font-size: 16px;
+    --s1-line-height: 26px;
+
+    --s2-font-size: 14px;
+    --s2-line-height: 22px;
+
+    --b1-font-size: 16px;
+    --b1-line-height: 24px;
+
+    --b2-font-size: 16px;
+    --b2-line-height: 24px;
+
+    --b3-font-size: 14px;
+    --b3-line-height: 22px;
+
+    --b4-font-size: 14px;
+    --b4-line-height: 22px;
+
+    --p-font-size: 12px;
+    --p-line-height: 12px;
+  }
+}
