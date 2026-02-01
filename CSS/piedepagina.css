@@ -41,7 +41,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: var(--relleno-16) var(--relleno-32);
-    gap: var(--relleno-16);
+    gap: var(--espaciado-16);
 }
 
 .balas-azules {
