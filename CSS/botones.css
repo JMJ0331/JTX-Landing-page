@@ -8,6 +8,7 @@
     font-weight: var(--p-font-weight);
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Botón primario */
