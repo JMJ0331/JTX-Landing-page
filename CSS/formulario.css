@@ -68,14 +68,14 @@
 
 @media (max-width: 1024px){
     .formulario-contenedor{
-        margin: var(--margen-32);
+        padding: var(--relleno-32);
     }
 }
 
 @media (max-width: 768px) {
 
     .formulario-contenedor{
-        margin: var(--margen-16);
+        padding: var(--relleno-16);
     }
 
     .horizontal {
