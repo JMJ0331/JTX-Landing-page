@@ -67,14 +67,14 @@
 }
 
 @media (max-width: 1024px){
-    .formulario{
+    .formulario-contenedor{
         margin: var(--margen-32);
     }
 }
 
 @media (max-width: 768px) {
 
-    .formulario{
+    .formulario-contenedor{
         margin: var(--margen-16);
     }
 
