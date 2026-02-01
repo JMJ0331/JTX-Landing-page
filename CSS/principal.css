@@ -1,0 +1,162 @@
+@import url(botones.css);
+@import url(encabezados.css);
+@import url(formulario.css);
+@import url(tarjetas.css);
+@import url(tipografias.css);
+@import url(variables.css);
+@import url(piedepagina.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--espaciado-8);
+    color: var(--blanco-50);
+    background-image: url(../imagenes/hero_imagen_landing-page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: var(--relleno-64) var(--relleno-32);
+    height: 100vh;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: var(--espaciado-8);
+    padding: var(--relleno-64) var(--relleno-32);
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.caracteristicas-contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--espaciado-8);
+}
+
+.experiencia {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--relleno-64) var(--relleno-32);
+    gap: var(--espaciado-8);
+}
+
+.experiencia img {
+    max-width: 100%;
+    height: auto;
+}
+
+.experiencia-contenedor {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    text-align: end;
+    gap: var(--espaciado-8);
+}
+
+.azul {
+    color: var(--azul-500);
+}
+
+.nuestrosServicios {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: center;
+    text-align: center;
+    padding: var(--relleno-64) var(--relleno-32);
+    gap: var(--espaciado-8);
+}
+
+.servicios-contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: start;
+    gap: var(--espaciado-8);
+}
+
+.ubicacion {
+    background-color: var(--primario-500);
+    height: fit-content;
+}
+
+.ubicacion {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco-50);
+    gap: var(--espaciado-8);
+    padding: var(--relleno-64) var(--relleno-32);
+}
+
+.mapa {
+    width: 100%;
+    border-radius: var(--bordeR-8);
+}
+
+.CTA {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--relleno-64) var(--relleno-32);
+    gap: var(--espaciado-8);
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .experiencia {
+        flex-flow: column wrap;
+    }
+
+    .experiencia-contenedor {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caracteristicas,
+    .experiencia,
+    .nuestrosServicios,
+    .ubicacion,
+    .CTA,
+    .hero {
+        padding: var(--relleno-32);
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    .caracteristicas-contenedor,
+    .servicios-contenedor {
+        flex-flow: column wrap;
+    }
+
+    .caracteristicas,
+    .experiencia,
+    .nuestrosServicios,
+    .ubicacion,
+    .CTA,
+    .hero {
+        padding: var(--relleno-32) var(--relleno-16);
+    }
+}
