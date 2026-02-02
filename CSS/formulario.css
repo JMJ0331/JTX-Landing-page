@@ -44,6 +44,10 @@
     background-color: var(--blanco-50);
 }
 
+.horizontal select option:first-child{
+    color: var(--negro-200) !important;
+}
+
 .formulario-header {
     display: flex;
     justify-content: space-between;
