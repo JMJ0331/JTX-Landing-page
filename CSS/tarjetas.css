@@ -20,7 +20,7 @@
     flex-direction: row;
     gap: var(--espaciado-16);
     background-color: var(--blanco-50);
-    box-shadow: var(--sombra-300);
+    box-shadow: var(--sombra-200);
     padding: var(--relleno-16);
     border-radius: var(--bordeR-8);
     width: 100%;
@@ -36,15 +36,19 @@
 }
 
 /* Tarjeta pequeña*/
-.tarjeta-p{
+.tarjeta-p {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: auto;
     height: auto;
     padding: var(--relleno-32);
-    box-shadow: var(--sombra-300);
+    box-shadow: var(--sombra-200);
     border-radius: var(--bordeR-8);
+}
+
+.tarjeta-p:hover {
+    box-shadow: var(--sombra-300);
 }
 
 /* Tablets */
