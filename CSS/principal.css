@@ -157,6 +157,11 @@
 /* Celulares */
 @media (max-width: 768px) {
 
+    .caracteristicas-contenedor img, .servicios-contenedor img, .ubicacion img{
+        width: 20px;
+        height: auto;
+    }
+
     .hero h1 {
         width: 100%;
         max-width: 100%;
