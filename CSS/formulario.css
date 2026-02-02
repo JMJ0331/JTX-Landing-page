@@ -30,6 +30,7 @@
     border-radius: var(--bordeR-4);
     border: var(--borde-2) solid var(--primario-300);
     color: var(--negro-400);
+    background-color: var(--blanco-50);
 }
 
 .horizontal input:focus,
