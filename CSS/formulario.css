@@ -38,6 +38,12 @@
     outline: var(--borde-2) solid var(--primario-300);
 }
 
+.horizontal select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--blanco-50);
+}
+
 .formulario-header {
     display: flex;
     justify-content: space-between;
