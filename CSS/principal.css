@@ -28,6 +28,11 @@
     height: 100vh;
 }
 
+.hero h1 {
+    width: 100%;
+    max-width: 70%;
+}
+
 .caracteristicas {
     display: flex;
     flex-flow: column nowrap;
@@ -122,6 +127,12 @@
 
 /* Tablets */
 @media (max-width: 1024px) {
+
+    .hero h1 {
+        width: 100%;
+        max-width: 90%;
+    }
+
     .experiencia {
         flex-flow: column wrap;
     }
@@ -145,6 +156,11 @@
 
 /* Celulares */
 @media (max-width: 768px) {
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .caracteristicas-contenedor,
     .servicios-contenedor {
