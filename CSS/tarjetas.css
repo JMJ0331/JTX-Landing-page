@@ -13,6 +13,11 @@
     height: auto;
 }
 
+.tarjeta-v img {
+    width: 100%;
+    height: auto;
+}
+
 /* Tarjeta horizontal */
 .tarjeta-h {
     display: flex;
@@ -62,8 +67,17 @@
 @media (max-width: 768px) {
     .tarjeta-v {
         max-width: 100%;
+        width: fit-content;
         padding: var(--relleno-8);
         border-radius: var(--bordeR-6);
+        gap: var(--espaciado-4);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjeta-v img {
+        width: 100%;
+        height: auto;
     }
 
     .tarjeta-h {
