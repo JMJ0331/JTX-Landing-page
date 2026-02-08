@@ -15,7 +15,7 @@
 }
 
 .pie-logo {
-    width: 140px;
+    width: 100px;
 }
 
 .redes-sociales {
@@ -103,9 +103,6 @@
 }
 
 @media (max-width: 768px) {
-    .pie-logo {
-        width: 100px;
-    }
 
     .pie-contenido {
         flex-flow: column-reverse wrap;

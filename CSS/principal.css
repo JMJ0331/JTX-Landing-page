@@ -22,10 +22,11 @@
     color: var(--blanco-50);
     background-image: url(../imagenes/hero_imagen_landing-page.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     padding: var(--relleno-64) var(--relleno-32);
-    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
 }
 
 .hero h1 {

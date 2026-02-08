@@ -26,7 +26,8 @@
 }
 
 .menu-hamburguesa img {
-    width: 140px;
+    width: 100px;
+    height: auto;
 }
 
 .menu-toggle {
@@ -65,11 +66,7 @@
     .menu-hamburguesa {
         gap: var(--espaciado-2);
     }
-
-    .menu-hamburguesa img {
-        width: 100px;
-    }
-
+    
     .menu-icon,
     .menu-icon::before,
     .menu-icon::after {
