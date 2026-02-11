@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: auto;
     height: auto;
     padding: var(--relleno-32);
     box-shadow: var(--sombra-200);
