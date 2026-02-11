@@ -81,7 +81,7 @@
 .nuestrosServicios {
     display: flex;
     flex-flow: column nowrap;
-    flex-direction: center;
+    justify-content: center;
     text-align: center;
     padding: var(--relleno-64) var(--relleno-32);
     gap: var(--espaciado-8);
