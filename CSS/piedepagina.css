@@ -88,12 +88,10 @@
     justify-content: center;
     padding: var(--relleno-16) var(--relleno-32);
     border-top: var(--borde-2) solid var(--negro-50);
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
-    .pie-logo {
-        width: 100px;
-    }
 
     .pie-encabezado,
     .pie-contenido,
