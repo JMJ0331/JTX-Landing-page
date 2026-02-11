@@ -5,49 +5,33 @@
 }
 
 h1{
-    font-size: var(--h1-font-size);
-    line-height: var(--h1-line-height);
-    font-weight: var(--h1-font-weight);
+    font-size: var(--h1);
 }
 
 h2{
-    font-size: var(--h2-font-size);
-    line-height: var(--h2-line-height);
-    font-weight: var(--h2-font-weight);
+    font-size: var(--h2);
 }
 
 h3{
-    font-size: var(--h3-font-size);
-    line-height: var(--h3-line-height);
-    font-weight: var(--h3-font-weight);
+    font-size: var(--h3);
 }
 
 h4{
-    font-size: var(--h4-font-size);
-    line-height: var(--h4-line-height);
-    font-weight: var(--h4-font-weight);
+    font-size: var(--h4);
 }
 
 h5{
-    font-size: var(--h5-font-size);
-    line-height: var(--h5-line-height);
-    font-weight: var(--h5-font-weight);
+    font-size: var(--h5);
 }
 
 h6{
-    font-size: var(--h6-font-size);
-    line-height: var(--h6-line-height);
-    font-weight: var(--h6-font-weight);
+    font-size: var(--h6);
 }
 
 p{
-    font-size: var(--p-font-size);
-    line-height: var(--p-line-height);
-    font-weight: var(--p-font-weight);
+    font-size: var(--body);
 }
 
 a{
-    font-size: var(--s2-font-size);
-    line-height: var(--s2-line-height);
-    font-weight: var(--s2-font-weight);
-}
+    font-size: var(--body-sm);
+} 
