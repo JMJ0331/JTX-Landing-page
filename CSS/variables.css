@@ -22,6 +22,11 @@
   --body: 1rem;
   --body-sm: 0.875rem;
 
+  /* Otros tamaños */
+  --font-lg: 1.45rem;
+  --font-md: 1rem;
+  --font-sm: 0.8rem;
+
   /* Texto en botones */
   --button-lg: 1.125rem;
   --button-md: 1rem;
@@ -316,6 +321,10 @@
     --h4: 1.125rem;
     --h5: 1.125rem;
     --h6: 1rem;
+
+    --font-lg: 1.25rem;
+    --font-md: 0.90rem;
+    --font-sm: 0.70rem;
   }
 }
 
@@ -328,5 +337,9 @@
     --h4: 1.025rem;
     --h5: 0.925rem;
     --h6: 0.825rem;
+
+    --font-lg: 1.05rem;
+    --font-md: 0.80rem;
+    --font-sm: 0.70rem;
   }
 }
