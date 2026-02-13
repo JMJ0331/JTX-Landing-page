@@ -8,7 +8,9 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--relleno-16) var(--relleno-32);
-    box-shadow: var(--sombra-100);
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .menu-hamburguesa {
