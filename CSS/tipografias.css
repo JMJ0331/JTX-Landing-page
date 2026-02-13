@@ -29,9 +29,9 @@ h6{
 }
 
 p{
-    font-size: var(--body);
+    font-size: var(--font-md);
 }
 
 a{
-    font-size: var(--body-sm);
+    font-size: var(--font-md);
 } 
