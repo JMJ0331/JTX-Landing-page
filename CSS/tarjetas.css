@@ -3,7 +3,8 @@
 /* Tarjeta vertical */
 .tarjeta-v {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     gap: var(--espaciado-8);
     background-color: var(--blanco-50);
     box-shadow: var(--sombra-200);
@@ -11,11 +12,14 @@
     border-radius: var(--bordeR-8);
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .tarjeta-v img {
     width: 100%;
-    height: auto;
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--bordeR-8);
 }
 
 /* Tarjeta horizontal */
