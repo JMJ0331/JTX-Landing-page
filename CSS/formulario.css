@@ -83,14 +83,11 @@
 
     .formulario {
         width: 100%;
+        max-width: fit-content;
     }
 }
 
 @media (max-width: 768px) {
-    .formulario {
-        width: 100%;
-    }
-
     .formulario-contenedor {
         padding: var(--relleno-16);
     }
