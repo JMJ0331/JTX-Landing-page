@@ -46,6 +46,10 @@
     gap: var(--espaciado-16);
 }
 
+.pie-contenido h3 {
+    font-size: var(--font-md);
+}
+
 .balas-azules {
     color: var(--azul-500);
 }
@@ -90,6 +94,10 @@
     justify-content: center;
     padding: var(--relleno-16) var(--relleno-32);
     text-align: center;
+}
+
+.pie p {
+    font-size: var(--font-sm);
 }
 
 @media (max-width: 1024px) {
