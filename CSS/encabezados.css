@@ -40,16 +40,18 @@
     cursor: pointer;
 }
 
-.menu-icon{
+.menu-icon {
     display: block;
 }
 
-.header a, li, ul {
+.header a,
+li,
+ul {
     text-decoration: none;
     list-style-type: none;
 }
 
-.navbar{
+.navbar {
     z-index: 1;
     margin-top: -2px;
 }
@@ -63,10 +65,12 @@
 
 .navbar a {
     color: var(--primario-500);
+    transition: 0.2s ease;
+    font-weight: 500;
 }
 
-.navbar a:hover{
-    color: var(--primario-100);
+.navbar a:hover {
+    font-weight: 700;
 }
 
 
@@ -78,7 +82,7 @@
     .menu-hamburguesa {
         gap: var(--espaciado-2);
     }
-    
+
     .menu-icon,
     .menu-icon::before,
     .menu-icon::after {
@@ -86,7 +90,7 @@
         width: 32px;
         height: 4px;
         position: absolute;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease;
         content: "";
     }
 
