@@ -5,14 +5,14 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    gap: var(--espaciado-8);
     background-color: var(--blanco-50);
     box-shadow: var(--sombra-200);
-    padding: var(--relleno-16);
     border-radius: var(--bordeR-8);
+    padding: var(--relleno-16);
     width: 100%;
     height: auto;
     overflow: hidden;
+    transition: 0.2s ease;
 }
 
 .tarjeta-v img {
@@ -20,13 +20,17 @@
     height: 220px;
     object-fit: cover;
     border-radius: var(--bordeR-8);
+    margin-bottom: 0.4rem;
+}
+
+.tarjeta-v h5 {
+    font-size: var(--font-md);
 }
 
 /* Tarjeta horizontal */
 .tarjeta-h {
     display: flex;
     flex-direction: row;
-    gap: var(--espaciado-8);
     background-color: var(--blanco-50);
     box-shadow: var(--sombra-200);
     padding: var(--relleno-16);
@@ -34,6 +38,7 @@
     width: 100%;
     max-width: 576px;
     height: auto;
+    transition: 0.2s ease;
 }
 
 .tarjeta-h-contenido {
@@ -52,10 +57,19 @@
     padding: var(--relleno-32);
     box-shadow: var(--sombra-200);
     border-radius: var(--bordeR-8);
+    transition: 0.2s ease;
+}
+
+.tarjeta-p img {
+    margin-bottom: 0.2rem;
+}
+
+.tarjeta-p h3, .tarjeta-p h4, .tarjeta-p h2{
+    font-size: var(--font-md);
 }
 
 .tarjeta-p:hover, .tarjeta-v:hover, .tarjeta-p:hover, .tarjeta-h:hover {
-    box-shadow: var(--sombra-300);
+    box-shadow: var(--sombra-400);
 }
 
 /* Tablets */
@@ -69,18 +83,8 @@
 /* Celulares */
 @media (max-width: 768px) {
     .tarjeta-v {
-        max-width: 100%;
-        width: fit-content;
-        padding: var(--relleno-8);
-        border-radius: var(--bordeR-6);
-        gap: var(--espaciado-4);
-        justify-content: center;
         align-items: center;
-    }
-
-    .tarjeta-v img {
-        width: 100%;
-        height: auto;
+        text-align: center;
     }
 
     .tarjeta-h {
