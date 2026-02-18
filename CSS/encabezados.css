@@ -122,10 +122,10 @@ ul {
         box-shadow: var(--sombra-100);
     }
 
-    .navbar ul {
+   .navbar ul {
         flex-direction: column;
         gap: var(--espaciado-8);
-        padding: var(--relleno-8);
+        padding: var(--relleno-8) var(--relleno-16);
     }
 
     .header.is-open .menu-icon {
