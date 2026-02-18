@@ -12,19 +12,20 @@
     box-sizing: border-box;
 }
 
+/* Contenedor */
 .contenedor {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
+/* Sección hero */
 .hero {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: var(--espaciado-8);
     color: var(--blanco-50);
     background-image: url(../imagenes/hero_imagen_landing-page.png);
     background-repeat: no-repeat;
@@ -37,9 +38,10 @@
 
 .hero h1 {
     width: 100%;
-    max-width: 70%;
+    max-width: 50rem;
 }
 
+/* Nuestras caracteristicas */
 .caracteristicas {
     display: flex;
     flex-flow: column nowrap;
@@ -58,6 +60,7 @@
     gap: var(--espaciado-8);
 }
 
+/* Nuestra experiencia laboral */
 .experiencia {
     display: flex;
     flex-flow: row nowrap;
@@ -77,13 +80,13 @@
     flex-flow: column nowrap;
     align-items: flex-end;
     text-align: end;
-    gap: var(--espaciado-8);
 }
 
 .azul {
     color: var(--azul-500);
 }
 
+/* Nuestros servicios */
 .nuestrosServicios {
     display: flex;
     flex-flow: column nowrap;
@@ -93,12 +96,12 @@
     gap: var(--espaciado-8);
 }
 
-.servicios-contenedor {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+.servicios-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     text-align: start;
     gap: var(--espaciado-8);
+    width: 100%;
 }
 
 .ubicacion {
@@ -106,6 +109,7 @@
     height: fit-content;
 }
 
+/* Nuestra ubicación */
 .ubicacion {
     display: flex;
     flex-flow: column nowrap;
@@ -113,7 +117,7 @@
     align-items: center;
     text-align: center;
     color: var(--blanco-50);
-    gap: var(--espaciado-8);
+    gap: var(--espaciado-4);
     padding: var(--relleno-64) var(--relleno-32);
 }
 
@@ -122,6 +126,7 @@
     border-radius: var(--bordeR-8);
 }
 
+/* CTA */
 .CTA {
     display: flex;
     flex-flow: column nowrap;
@@ -129,7 +134,7 @@
     align-items: center;
     text-align: center;
     padding: var(--relleno-64) var(--relleno-32);
-    gap: var(--espaciado-8);
+    gap: var(--espaciado-4);
 }
 
 /* Tablets */
@@ -174,9 +179,12 @@
         max-width: 100%;
     }
 
-    .caracteristicas-contenedor,
-    .servicios-contenedor {
+    .caracteristicas-contenedor {
         flex-flow: column wrap;
+    }
+
+    .servicios-contenedor{
+        grid-template-columns: 1fr;
     }
 
     .caracteristicas,
