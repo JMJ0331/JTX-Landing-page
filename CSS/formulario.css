@@ -27,10 +27,21 @@
 }
 
 
-#tipoEquipo select, #instalacion select{
-    -webkit-appearance: none; 
+#tipoEquipo,
+#instalacion {
+    -webkit-appearance: none;
     appearance: none;
     -moz-appearance: none;
+    background-color: var(--blanco-50); 
+}
+
+.horizontal select {
+    color: var(--negro-300);
+    opacity: 1; 
+}
+
+.horizontal select option {
+    color: var(--negro-900); 
 }
 
 .horizontal input,
@@ -90,6 +101,10 @@
 @media (max-width: 768px) {
     .formulario-contenedor {
         padding: var(--relleno-16);
+    }
+
+    .formulario {
+        max-width: 100%;
     }
 
     .horizontal {
